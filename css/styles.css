@@ -1,0 +1,48 @@
+body{
+    background-image: url(../img/black.jpg);
+    color: whitesmoke;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    border-bottom: double 3px;
+    border-bottom-color: aqua;
+
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h3 {
+    padding-left: 2%;
+    font-weight: bold;
+    color: aqua;
+
+
+}
+
+.list{
+    padding-left: 2%;
+    list-style: none;
+
+}
+
+.button {
+    background-color: aqua;
+    border-radius: 4px;
+    transition-duration: .5s;
+    font-size: 20px;
+
+}
+
+.button:hover {
+    background-color: whitesmoke;
+
+}

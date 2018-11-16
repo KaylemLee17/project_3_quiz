@@ -1,3 +1,6 @@
+<?php
+include "/include/quiz.php"
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,25 +8,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kaylem's quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Bulma/css/main.css" />
-    <style>
-        body{
-            background-image: url(./img/almost.jpg);   
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    
+
+
     
 </head>
 <body>
-    <div class="title is-centered">
-        Quiz
+    <div>
+        <h1>Quiz</h1>
     </div>
-    <div class="subtitle">
-        <h3>This is a simple multiple choices quiz. There are a total of 20 questions, each with only one correct answer. Choose the correct answer from the 4 options given.</h3>
+    <div>
+        <h2>This is a simple multiple choices quiz. There are a total of 20 questions, each with only one correct answer. Choose the correct answer from the 4 options given.</h2>
     </div>
 
     <div class="">
         <form action="quiz.php" method="post" id="quiz">
-        <ol>
+        <ol class="list">
             <li>
                <h3>question1</h3>
                <div>
@@ -406,7 +407,7 @@
             </li>
         </ol>
         </form>
-        <input type="submit" value="submit quiz" class="button is-success button is-medium button is-rounded is-centered">
+        <input type="submit" value="submit quiz" class="button">
     </div>
 </body>
 </html>
