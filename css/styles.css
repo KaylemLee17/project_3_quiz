@@ -1,7 +1,8 @@
 body{
     background-image: url(../img/black.jpg);
     color: whitesmoke;
-
+    text-align: center;
+    
 }
 
 h1 {
@@ -31,6 +32,7 @@ h3 {
 .list{
     padding-left: 2%;
     list-style: none;
+    
 
 }
 
@@ -38,7 +40,8 @@ h3 {
     background-color: aqua;
     border-radius: 4px;
     transition-duration: .5s;
-    font-size: 20px;
+    font-size: 24px;
+    margin-left: 5%;
 
 }
 
@@ -47,5 +50,5 @@ h3 {
 
 }
 .radio {
-    display: inline-block;
+    display: inline;
 }
