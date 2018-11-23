@@ -1,5 +1,5 @@
 <?php
-    include results.php;
+include('results.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,406 +9,192 @@
     <title>Kaylem's quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-    
-
-
-    
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 <body>
+    <form action="results.php" method="post" id="quiz">
+    <!-- Intro to quiz -->
     <div>
         <h1>Quiz</h1>
     </div>
     <div>
         <h2>This is a simple multiple choices quiz. There are a total of 20 questions, each with only one correct answer. Choose the correct answer from the 4 options given.</h2>
     </div>
-
-    <div class="">
-        <form action="results.php" method="post" id="quiz">
-        <ol class="list">
-            <li>
-               <h3>question1</h3>
-               <div>
-                   <input type="radio" name="question-1-answer" id="question-1-answer-A" value="A"/>
-                   <label for="question-1-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-1-answer" id="question-1-answer-B" value="B"/>
-                   <label for="question-1-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-1-answer" id="question-1-answer-C" value="C"/>
-                   <label for="question-1-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-1-answer" id="question-1-answer-D" value="D"/>
-                   <label for="question-1-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question2</h3>
-               <div>
-                   <input type="radio" name="question-2-answer" id="question-2-answer-A" value="A"/>
-                   <label for="question-2-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-2-answer" id="question-2-answer-B" value="B"/>
-                   <label for="question-2-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-2-answer" id="question-2-answer-C" value="C"/>
-                   <label for="question-2-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-2-answer" id="question-2-answer-D" value="D"/>
-                   <label for="question-2-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question3</h3>
-               <div>
-                   <input type="radio" name="question-3-answer" id="question-3-answer-A" value=""/>
-                   <label for="question-3-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-3-answer" id="question-3-answer-B" value="B"/>
-                   <label for="question-3-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-3-answer" id="question-3-answer-C" value="C"/>
-                   <label for="question-3-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-3-answer" id="question-3-answer-D" value="D"/>
-                   <label for="question-3-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question4</h3>
-               <div>
-                   <input type="radio" name="question-4-answer" id="question-4-answer-A" value="A"/>
-                   <label for="question-4-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-4-answer" id="question-4-answer-B" value="B"/>
-                   <label for="question-4-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-4-answer" id="question-4-answer-C" value="C"/>
-                   <label for="question-4-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-4-answer" id="question-4-answer-D" value="D"/>
-                   <label for="question-4-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question5</h3>
-               <div>
-                   <input type="radio" name="question-5-answer" id="question-5-answer-A" value="A"/>
-                   <label for="question-5-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-5-answer" id="question-5-answer-B" value="B"/>
-                   <label for="question-5-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-5-answer" id="question-5-answer-C" value="C"/>
-                   <label for="question-5-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-5-answer" id="question-5-answer-D" value="D"/>
-                   <label for="question-5-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question6</h3>
-               <div>
-                   <input type="radio" name="question-6-answer" id="question-6-answer-A" value="A"/>
-                   <label for="question-6-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-6-answer" id="question-6-answer-B" value="B"/>
-                   <label for="question-6-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-6-answer" id="question-6-answer-C" value="C"/>
-                   <label for="question-6-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-6-answer" id="question-6-answer-D" value="A"/>
-                   <label for="question-6-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question7</h3>
-               <div>
-                   <input type="radio" name="question-7-answer" id="question-7-answer-A" value="A"/>
-                   <label for="question-7-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-7-answer" id="question-7-answer-B" value="B"/>
-                   <label for="question-7-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-7-answer" id="question-7-answer-C" value="C"/>
-                   <label for="question-7-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-7-answer" id="question-7-answer-D" value="D"/>
-                   <label for="question-7-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question8</h3>
-               <div>
-                   <input type="radio" name="question-8-answer" id="question-8-answer-A" value="A"/>
-                   <label for="question-8-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-8-answer" id="question-8-answer-B" value="B"/>
-                   <label for="question-8-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-8-answer" id="question-8-answer-C" value="C"/>
-                   <label for="question-8-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-8-answer" id="question-8-answer-D" value="D"/>
-                   <label for="question-8-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question9</h3>
-               <div>
-                   <input type="radio" name="question-9-answer" id="question-1-answer-A" value="A"/>
-                   <label for="question-9-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-9-answer" id="question-9-answer-B" value="B"/>
-                   <label for="question-9-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-9-answer" id="question-9-answer-C" value="C"/>
-                   <label for="question-9-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-9-answer" id="question-9-answer-D" value="D"/>
-                   <label for="question-9-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question10</h3>
-               <div>
-                   <input type="radio" name="question-10-answer" id="question-10-answer-A" value="A"/>
-                   <label for="question-10-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-10-answer" id="question-10-answer-B" value="B"/>
-                   <label for="question-10-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-10-answer" id="question-10-answer-C" value="C"/>
-                   <label for="question-10-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-10-answer" id="question-10-answer-D" value="D"/>
-                   <label for="question-10-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question11</h3>
-               <div>
-                   <input type="radio" name="question-11-answer" id="question-11-answer-A" value="A"/>
-                   <label for="question-11-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-11-answer" id="question-11-answer-B" value="B"/>
-                   <label for="question-11-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-11-answer" id="question-11-answer-C" value="C"/>
-                   <label for="question-11-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-11-answer" id="question-11-answer-D" value="D"/>
-                   <label for="question-11-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question12</h3>
-               <div>
-                   <input type="radio" name="question-12-answer" id="question-12-answer-A" value="A"/>
-                   <label for="question-12-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-12-answer" id="question-12-answer-B" value="B"/>
-                   <label for="question-12-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-12-answer" id="question-12-answer-C" value="C"/>
-                   <label for="question-12-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-12-answer" id="question-12-answer-D" value="D"/>
-                   <label for="question-12-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question13</h3>
-               <div>
-                   <input type="radio" name="question-13-answer" id="question-13-answer-A" value="A"/>
-                   <label for="question-13-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-13-answer" id="question-13-answer-B" value="B"/>
-                   <label for="question-13-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-13-answer" id="question-13-answer-C" value="C"/>
-                   <label for="question-13-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-13-answer" id="question-13-answer-D" value="D"/>
-                   <label for="question-13-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question14</h3>
-               <div>
-                   <input type="radio" name="question-1-answer" id="question-14-answer-A" value="A"/>
-                   <label for="question-14-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-14-answer" id="question-14-answer-B" value="B"/>
-                   <label for="question-14-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-14-answer" id="question-14-answer-C" value="C"/>
-                   <label for="question-14-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-14-answer" id="question-14-answer-D" value="D"/>
-                   <label for="question-14-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question15</h3>
-               <div>
-                   <input type="radio" name="question-15-answer" id="question-15-answer-A" value="A"/>
-                   <label for="question-15-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-15-answer" id="question-15-answer-B" value="B"/>
-                   <label for="question-15-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-15-answer" id="question-15-answer-C" value="C"/>
-                   <label for="question-15-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-15-answer" id="question-15-answer-D" value="D"/>
-                   <label for="question-15-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question16</h3>
-               <div>
-                   <input type="radio" name="question-16-answer" id="question-16-answer-A" value="A"/>
-                   <label for="question-16-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-16-answer" id="question-16-answer-B" value="B"/>
-                   <label for="question-16-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-16-answer" id="question-16-answer-C" value="C"/>
-                   <label for="question-16-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-16-answer" id="question-16-answer-D" value="D"/>
-                   <label for="question-16-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question17</h3>
-               <div>
-                   <input type="radio" name="question-17-answer" id="question-17-answer-A" value="A"/>
-                   <label for="question-17-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-17-answer" id="question-17-answer-B" value="B"/>
-                   <label for="question-17-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-17-answer" id="question-17-answer-C" value="C"/>
-                   <label for="question-17-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-17-answer" id="question-17-answer-D" value="D"/>
-                   <label for="question-17-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question18</h3>
-               <div>
-                   <input type="radio" name="question-18-answer" id="question-18-answer-A" value="A"/>
-                   <label for="question-18-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-18-answer" id="question-18-answer-B" value="B"/>
-                   <label for="question-18-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-18-answer" id="question-18-answer-C" value="C"/>
-                   <label for="question-18-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-18-answer" id="question-18-answer-D" value="D"/>
-                   <label for="question-18-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question19</h3>
-               <div>
-                   <input type="radio" name="question-19-answer" id="question-19-answer-A" value="A"/>
-                   <label for="question-19-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-19-answer" id="question-19-answer-B" value="B"/>
-                   <label for="question-19-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-19-answer" id="question-19-answer-C" value="C"/>
-                   <label for="question-19-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-19-answer" id="question-19-answer-D" value="D"/>
-                   <label for="question-19-D">D) answer</label>
-               </div>
-            </li>
-            <li>
-               <h3>question20</h3>
-               <div>
-                   <input type="radio" name="question-20-answer" id="question-20-answer-A" value="A"/>
-                   <label for="question-20-A">A) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-20-answer" id="question-20-answer-B" value="B"/>
-                   <label for="question-20-B">B) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-20-answer" id="question-20-answer-C" value="C"/>
-                   <label for="question-20-C">C) answer</label>
-               </div>
-               <div>
-                   <input type="radio" name="question-20-answer" id="question-20-answer-D" value="D"/>
-                   <label for="question-20-D">D) answer</label>
-               </div>
-            </li>
-        </ol>
-        <input type="submit" value="submit quiz" class="button">
-        </form>
+<!-- PHP script for questions array -->
+    <?php
+        $Questions = array(
+            'question-1-answers' => array(
+                    'question' => 'Before Mount Everest was discovered, what was the highest point on Earth?',
+                    'A) Mount Kilomanjaro',
+                    'B) The Eiffel Tower',
+                    'C) Mount Everest',
+                    'D) Table Mountain'
+            ),
+            'question-2-answers' => array(
+                    'question' => 'What is the longest running anime to date?',
+                    'A) Naruto',
+                    'B) One Piece',
+                    'C) Hellsing',
+                    'D) Bleach'
+            ),
+            'question-3-answers' => array(
+                    'question' => 'Audi owns the rights to many car companies, select the one they DON\'T own',
+                    'A) Lamborghini',
+                    'B) Bently',
+                    'C) Alfa Romeo',
+                    'D) Porsche'
+            ),
+            'question-4-answers' => array(
+                    'question' => 'An ex cop lost his house, his car and his family, what did he lose first?',
+                    'A) His car',
+                    'B) His house',
+                    'C) His job',
+                    'D) His family'
+            ),
+            'question-5-answers' => array(
+                    'question' => 'Your parents knocks at your door at 3am for breakfast. You have milk, cheese and eggs, what do you open first?',
+                    'A) The door',
+                    'B) Your eyes',
+                    'C) The fridge',
+                    'D) The milk'
+            ),
+            'question-6-answers' => array(
+                    'question' => 'What is the common name for the chemical compound NaCl?',
+                    'A) Table salt',
+                    'B) Chlorine',
+                    'C) Nitrogen Chloride',
+                    'D) Pool acid'
+            ),
+            'question-7-answers' => array(
+                    'question' => 'What is the percentage that a baby\'s brain grows from the time of conception until the age of 2 years?',
+                    'A) 20%',
+                    'B) 50%',
+                    'C) 75%',
+                    'D) 80%'
+            ),
+            'question-8-answers' => array(
+                    'question' => 'A bald man walks in the rain, he\'s soaking wet from head to toe. What didn\'t get wet?',
+                    'A) His toes',
+                    'B) His body',
+                    'C) His bag',
+                    'D) His hair'
+            ),
+            'question-9-answers' => array(
+                    'question' => 'Which car brand has won the World Rally Championship the most times?',
+                    'A) Ferrari',
+                    'B) Lamborghini',
+                    'C) Ford',
+                    'D) Subaru'
+            ),
+            'question-10-answers' => array(
+                    'question' => 'What is the most poweful storms on earth called?',
+                    'A) Thunderstorm',
+                    'B) Hurricane',
+                    'C) Cyclone',
+                    'D) Supercell'
+            ),
+            'question-11-answers' => array(
+                    'question' => 'What is the most abundant element on Earth?',
+                    'A) Oxygen',
+                    'B) Sulphur',
+                    'C) Magnisuim',
+                    'D) Iorn'
+            ),
+            'question-12-answers' => array(
+                    'question' => 'What is the deepest point on Earth?',
+                    'A) Tonga trench',
+                    'B) Marianas trench',
+                    'C) Philppine trench',
+                    'D) Kuril-Kamchatka Trench'
+            ),
+            'question-13-answers' => array(
+                    'question' => 'What do you call a bicycle with a large front wheel and a small back wheel?',
+                    'A) Uni-cycle',
+                    'B) Tri-cylce',
+                    'C) Bisycle',
+                    'D) Penny farthing'
+            ),
+            'question-14-answers' => array(
+                    'question' => 'What do you call the process of little balls of fluff forming on clothing?',
+                    'A) Pilling',
+                    'B) Abrasion',
+                    'C) Duribility',
+                    'D) Elastisity'
+            ),
+            'question-15-answers' => array(
+                    'question' => 'What is the smallest bone in your body?',
+                    'A) Ear bone',
+                    'B) Knuckle',
+                    'C) Ankle',
+                    'D) Tooth'
+            ),
+            'question-16-answers' => array(
+                    'question' => 'How many bones are there in a fully grown human?',
+                    'A) 305',
+                    'B) 290',
+                    'C) 206',
+                    'D) 329'
+            ),
+            'question-17-answers' => array(
+                    'question' => 'How many facial muscles does it take to speak one word?',
+                    'A) 100',
+                    'B) 88',
+                    'C) 72',
+                    'D) 92'
+            ),
+            'question-18-answers' => array(
+                    'question' => 'What is the earlierst form of a clock used in ancient times?',
+                    'A) Obelisk',
+                    'B) Sun dail',
+                    'C) Sand stick',
+                    'D) Wather clock'
+            ),
+            'question-19-answers' => array(
+                    'question' => 'In which year was the religion of Islam founded?',
+                    'A) 585 A.D',
+                    'B) 570 A.D',
+                    'C) 590 A.D',
+                    'D) 550 A.D'
+            ),
+            'question-20-answers' => array(
+                    'question' => 'What is the name of the first mobile phone invented?',
+                    'A) Motorola',
+                    'B) Nokia',
+                    'C) Siemens',
+                    'D) Sony Erricson'
+            ),
+        ); 
         
-    </div>
+    ?>
+<!-- End of PHP array for questions-->
+
+<!-- Foreach loop for questions  -->
+    <?php
+        foreach ($Questions as $x => $q) { 
+    ?>
+    
+
+    <h2><?php echo implode(array_splice($q, 0, 1)) ?></h2>   
+        <?php 
+        foreach ($q as $n => $answer) {
+        ?> 
+            <div>                       
+                    <input type="radio" name="<?php echo $x; ?>" id="question-1-answers" value="<?php echo $n; ?>">
+                    <label for="<?php echo $x; ?>"><?php echo $answer;?></label> 
+                    
+            </div>
+        <?php
+        }
+    }   
+                ?>
+
+<!-- end of foreach loop for questions -->
+
+<!-- Submit button for quiz -->
+        <input type="submit" value="submit quiz" class="button">
+
+        </form>
+
+
 </body>
 </html>
