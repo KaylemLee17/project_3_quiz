@@ -1,6 +1,6 @@
-<?php
-include('results.php');
-?>
+<!-- <?php
+include('inc/results.php');
+?> -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,7 @@ include('results.php');
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 <body>
-    <form action="results.php" method="post" id="quiz">
+    <form action="inc/results.php" method="post" id="quiz">
     <!-- Intro to quiz -->
     <div>
         <h1>Quiz</h1>
@@ -98,7 +98,7 @@ include('results.php');
                     'A) Oxygen',
                     'B) Sulphur',
                     'C) Magnisuim',
-                    'D) Iorn'
+                    'D) Iron'
             ),
             'question-12-answers' => array(
                     'question' => 'What is the deepest point on Earth?',
@@ -179,7 +179,7 @@ include('results.php');
         foreach ($q as $n => $answer) {
         ?> 
             <div>                       
-                    <input type="radio" name="<?php echo $x; ?>" id="question-1-answers" value="<?php echo $n; ?>">
+                    <input type="radio" name="<?php echo $x; ?>" id="question-1-answer" value="<?php echo $n; ?>">
                     <label for="<?php echo $x; ?>"><?php echo $answer;?></label> 
                     
             </div>
@@ -188,9 +188,13 @@ include('results.php');
     }   
                 ?>
 
+    <br>
+
 <!-- end of foreach loop for questions -->
 
 <!-- Submit button for quiz -->
+
+    <br>
         <input type="submit" value="submit quiz" class="button">
 
         </form>
